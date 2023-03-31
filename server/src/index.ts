@@ -8,7 +8,7 @@ import userRouter from "./routes/userRouter";
 import roomRouter from "./routes/roomRouter";
 import messageRouter from "./routes/messageRouter";
 
-import { db } from "./utils/db";
+import { db } from "./db";
 
 import { clientErrorHandler, errorLogger } from "./middlewares/errorHandler";
 import { requestLogger } from "./middlewares/requestLogger";

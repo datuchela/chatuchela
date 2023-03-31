@@ -1,6 +1,6 @@
 import type { Prisma } from "@prisma/client";
-import { prisma } from "../../prisma";
-import { asyncDBWrapper } from "./asyncDBWrapper";
+import { prisma } from "./prisma";
+import { asyncDBWrapper } from "./utils/asyncDBWrapper";
 
 export const getAllUsers = async () => {
 	return await asyncDBWrapper(() => prisma.user.findMany());

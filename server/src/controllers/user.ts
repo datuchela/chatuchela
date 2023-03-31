@@ -1,5 +1,5 @@
 import type { NextFunction, Request, Response } from "express";
-import { db } from "../utils/db";
+import { db } from "../db";
 
 export const getAllUsers = async (
 	req: Request,
